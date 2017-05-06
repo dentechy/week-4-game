@@ -3,3 +3,6 @@
 // Crystals are randomly generated numbers between 1 and 12.
 // Win game once score === random number. Lose game if score > random number.
 // Updates the stats for wins, losses. Reset number to a different random number.
+
+var randomTarget = Math.floor((Math.random() * 120) + 19);
+
