@@ -1,0 +1,12 @@
+.ruby {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.button {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
