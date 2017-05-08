@@ -44,6 +44,18 @@ function checkEquality() {
         }
     }
 }
+
+//Function to update win/lose stats
+function counterStats() {
+    if (userScore === randomTarget) {
+        alert("You won!");
+    }
+    else {
+        alert("You lost!");
+    }
+}
+
+
 // The Main Process
 
 getRandomNumber();
@@ -51,6 +63,7 @@ getRandomNumber();
 gemButtons();
 
 checkEquality();
+
 
 $("#ruby").click(function() {
     userScore = userScore + rubyGem;
@@ -69,3 +82,6 @@ $("#topaz").click(function() {
     userScore = userScore + topazGem;
     $("#userScore").html("<p>" + userScore + "</p>");
 });
+
+
+counterStats();
