@@ -4,5 +4,20 @@
 // Win game once score === random number. Lose game if score > random number.
 // Updates the stats for wins, losses. Reset number to a different random number.
 
-var randomTarget = Math.floor((Math.random() * 120) + 19);
+var randomTarget = 0;
 
+
+//Functions to generate random numbers and keep track of score.
+
+function getRandomNumber() {
+    randomTarget = Math.floor(Math.random() * (120 - 19)) + 19;
+    $("#randomTarget").html(randomTarget);
+}
+console.log(randomTarget);
+
+
+
+
+// The Main Process
+
+getRandomNumber();
