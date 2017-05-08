@@ -49,6 +49,7 @@ function checkEquality() {
 getRandomNumber();
 
 gemButtons();
+
 checkEquality();
 
 $("#ruby").click(function() {
